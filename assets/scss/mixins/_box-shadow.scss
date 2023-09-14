@@ -1,0 +1,7 @@
+// Define a mixin for creating CSS box shadows
+@mixin box-shadow($x, $y, $blur, $r, $g, $b, $a) {
+  $color: rgba($r, $g, $b, $a); // Create the rgba color
+  box-shadow: $x $y $blur $color; // Apply the shadow with rgba color
+  -webkit-box-shadow: $x $y $blur $color; // Vendor prefixes
+  -moz-box-shadow: $x $y $blur $color; // Vendor prefixes
+}
